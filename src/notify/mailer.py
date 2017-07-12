@@ -67,6 +67,6 @@ def send_email(msg, host='localhost', port=25,
         s.ehlo()
         s.starttls()
         s.ehlo()
-        s.login(user, passwd)
+        s.login(username, password)
     s.sendmail(msg['From'], [msg['To']], msg.as_string())
     s.close()
